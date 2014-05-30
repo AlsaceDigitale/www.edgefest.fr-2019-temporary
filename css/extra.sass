@@ -1,0 +1,358 @@
+body
+  font-family: 'Open Sans', sans-serif
+  color: #282828
+
+.mt-20
+  margin-top: 20px
+
+h3
+  margin-bottom: 0
+
+p.anim
+  font-size: 12px
+  line-height: 14px
+  font-weight: normal
+  padding-bottom: 0
+  margin-bottom: 6px
+  font-style: italic
+
+ul.dotted li
+  text-indent: -.7em
+  &:before
+    content: "•"
+    padding-left: 10px
+    padding-right: 10px
+
+.full
+  background-color: red
+  color: white
+  padding: 0 5px
+  margin-left: 10px
+
+section a
+  text-decoration: underline
+
+header
+  height: 500px
+  color: white
+  width: 100%
+  background: url("/img/rivetoile.jpg") no-repeat center top fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  a.mainlink
+    color: white
+    text-decoration: none
+    &:hover, &:visited
+      color: white
+      text-decoration: none
+  h1
+    margin-top: 164px
+    font: 400 64px/64px 'Londrina Solid'
+    text-shadow: 1px 1px #000000
+  p
+    &.subtitle
+      margin-top: 20px
+      font: 400 30px/36px "gentium book basic"
+    &.subsubtitle
+      margin-top: 20px
+      font: 400 26px/32px "gentium book basic"
+  h1
+    text-align: center
+  p
+    &.subtitle, &.subsubtitle
+      text-align: center
+
+section
+  background-color: white
+  color: #282828
+  padding-top: 20px
+  padding-bottom: 20px
+  min-height: 200px
+  &.thin
+    min-height: 0
+  &.summercamp h2
+    margin-bottom: 0
+  &.intro
+    padding-top: 10px
+    padding-bottom: 0
+    min-height: 0
+    .span12 p:last-child
+      margin-bottom: 0
+  &.content
+    background-color: #34b8d0
+    color: #282828
+    padding-top: 20px
+    font-size: 34px
+    line-height: 40px
+    font-weight: bold
+    text-align: center
+  &.sponsors h2
+    margin-bottom: 20px
+  &.startups
+    .startup
+      margin-bottom: 20px
+      .logo
+        text-align: center
+
+.nav
+  min-height: auto
+  margin: 0 0 20px 0
+  padding: 0
+  background-color: #282828
+  font-size: 1.1em
+
+nav
+  min-height: 0
+  margin-bottom: 1em
+  padding: 1em 0
+  text-align: center
+
+.nav-list
+  li
+    text-align: center
+    display: inline
+    margin: 0 1%
+    padding: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    &:before
+      content: "|"
+      color: #BBB
+      position: relative
+      right: 1%
+    &:first-child:before
+      content: ""
+  padding-left: 0
+  margin-left: 0
+  a
+    transition: background-color 0.3s ease-in-out 0s
+    text-decoration: none
+    font: 800 1em "Open sans"
+    font-variant: small-caps
+    color: #BBB
+    transition: color 0.3s ease-in-out 0s
+    &:visited
+      text-decoration: none
+      font: 800 1em "Open sans"
+      font-variant: small-caps
+      color: #BBB
+      transition: color 0.3s ease-in-out 0s
+    &:hover
+      color: white
+      transition: color 0.1s ease-in-out 0s
+
+.table
+  th
+    text-align: center
+  td
+    text-align: center
+    vertical-align: middle
+  tr td:first-child
+    text-align: right
+    vertical-align: top
+    padding: 0 4px 8px 8px
+    font-weight: 300
+    font-size: 12px
+  td.withcontent
+    padding: 2px
+    font-size: 20px
+
+h2
+  font: 800 24px/28px "open sans"
+  margin-bottom: 40px
+
+table a
+  font-size: 20px
+  line-height: 28px
+  text-decoration: underline
+
+$demonight_color: #f16e25
+$edgenight_color: darken(#99d42a, 10%)
+$edgeday_color: #e72b80
+$hackathon_color: #4dc4d6
+$barcampalsace_color: #faae0b
+$summercamp_color: #9e2698
+
+.demonight, .demonight a
+  background-color: $demonight_color !important
+  color: white
+  transition: all 0.3s ease-in-out 0s
+
+.edgenight, .edgenight a
+  background-color: $edgenight_color !important
+  color: white
+  transition: all 0.3s ease-in-out 0s
+
+.edgeday, .edgeday a
+  background-color: $edgeday_color !important
+  color: white
+  transition: all 0.3s ease-in-out 0s
+
+.hackathon, .hackathon a
+  background-color: $hackathon_color !important
+  color: white
+  transition: all 0.3s ease-in-out 0s
+
+.barcampalsace, .barcampalsace a
+  background-color: $barcampalsace_color !important
+  color: white
+  transition: all 0.3s ease-in-out 0s
+
+.summercamp, .summercamp a
+  background-color: $summercamp_color !important
+  color: white
+  transition: all 0.3s ease-in-out 0s
+
+table
+  .demonight:hover, .demonight:hover a
+    background-color: lighten($demonight_color, 10%) !important
+  .edgenight:hover, .edgenight:hover a
+    background-color: lighten($edgenight_color, 10%) !important
+  .edgeday:hover, .edgeday:hover a
+    background-color: lighten($edgeday_color, 10%) !important
+  .hackathon:hover, .hackathon:hover a
+    background-color: lighten($hackathon_color, 10%) !important
+  .barcampalsace:hover, .barcampalsace:hover a
+    background-color: lighten($barcampalsace_color, 10%) !important
+  .summercamp:hover, .summercamp:hover a
+    background-color: lighten($summercamp_color, 10%) !important
+
+footer
+  min-height: 0
+  padding: 1em 0
+  text-align: center
+  background-color: #282828
+  color: white
+
+ul.sponsors
+  text-align: center
+  li
+    padding: 0
+    margin: 0 20px 20px 0
+  img
+    height: auto
+    max-width: 300px
+    max-height: 70px
+    &.smaller
+      max-height: 60px
+
+p
+  &.date, &.venue
+    margin: 0
+  &.type
+    margin: 0
+    margin-bottom: 10px
+    font-weight: 800
+
+.sticky
+  background-color: red
+  color: white
+  padding: 10px
+  text-align: center
+  font-weight: 600
+  position: absolute
+  top: 0
+  width: 100%
+
+.small-caps
+  font-variant: small-caps
+  text-transform: uppercase
+
+.co
+  color: #34b8d0
+
+@media screen and (max-width: 767px)
+  body
+    padding-left: 0
+    padding-right: 0
+  section
+    padding-left: 10px
+    padding-right: 10px
+
+@media screen and (max-width: 510px)
+  header h1
+    margin-top: 150px
+
+/***** MEDIA QUERIES ****
+
+/*                              319px
+@media screen and (max-width: 19.938em)
+  .nav-list
+    width: 100%
+    li
+      width: 100%
+    padding-left: 0
+
+/*                              500px
+@media screen and (max-width: 31.25em)
+  nav
+    padding: 0
+    margin: 0
+  .nav-list
+    width: 100%
+    margin: 0 auto
+    padding: 0
+    padding-left: 0
+    li
+      width: 100%
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+      padding: 0.5em
+      color: transparent
+      transition: background-color 0.3s ease-in-out 0s
+      display: block
+      &:hover, &:active
+        background-color: #545454
+        transition: background-color 0.1s ease-in-out 0s
+      &:first-child a
+        border-top: 0
+    a
+      display: block
+      margin: 0 !important
+      padding: 0.4em 0 !important
+      width: 100%
+      color: white
+      text-align: center
+      &:hover, &:visited
+        color: white
+        text-align: center
+
+/*                              501px                    750px
+@media screen and (min-width: 31.313em) and (max-width: 46.875em)
+  nav
+    padding: 0
+    margin: 0
+  .nav-list
+    width: 100%
+    margin: 0 auto
+    padding: 0
+    padding-left: 0
+    li
+      float: left
+      width: 33.333%
+      border: 1px solid rgba(255, 255, 255, 0.05)
+      padding: 0.5em
+      color: transparent
+      transition: background-color 0.3s ease-in-out 0s
+      &:hover, &:active
+        background-color: #545454
+        transition: background-color 0.1s ease-in-out 0s
+    a
+      display: block
+      margin: 0 !important
+      padding: 0.4em 0 !important
+      width: 100%
+
+/*                              750px
+@media screen and (max-width: 46.875em)
+  .nav-list
+    li
+      margin: 0
+      &:before
+        content: ""
+    a
+      color: white
+      &:hover, &:visited, &:active
+        color: white

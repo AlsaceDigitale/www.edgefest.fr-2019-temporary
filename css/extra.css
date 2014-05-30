@@ -1,0 +1,342 @@
+@charset "UTF-8";
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #282828; }
+
+.mt-20 {
+  margin-top: 20px; }
+
+h3 {
+  margin-bottom: 0; }
+
+p.anim {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+  padding-bottom: 0;
+  margin-bottom: 6px;
+  font-style: italic; }
+
+ul.dotted li {
+  text-indent: -0.7em; }
+  ul.dotted li:before {
+    content: "•";
+    padding-left: 10px;
+    padding-right: 10px; }
+
+.full {
+  background-color: red;
+  color: white;
+  padding: 0 5px;
+  margin-left: 10px; }
+
+section a {
+  text-decoration: underline; }
+
+header {
+  height: 500px;
+  color: white;
+  width: 100%;
+  background: url("/img/rivetoile.jpg") no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header a.mainlink {
+    color: white;
+    text-decoration: none; }
+    header a.mainlink:hover, header a.mainlink:visited {
+      color: white;
+      text-decoration: none; }
+  header h1 {
+    margin-top: 164px;
+    font: 400 64px/64px "Londrina Solid";
+    text-shadow: 1px 1px black; }
+  header p.subtitle {
+    margin-top: 20px;
+    font: 400 30px/36px "gentium book basic"; }
+  header p.subsubtitle {
+    margin-top: 20px;
+    font: 400 26px/32px "gentium book basic"; }
+  header h1 {
+    text-align: center; }
+  header p.subtitle, header p.subsubtitle {
+    text-align: center; }
+
+section {
+  background-color: white;
+  color: #282828;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 200px; }
+  section.thin {
+    min-height: 0; }
+  section.summercamp h2 {
+    margin-bottom: 0; }
+  section.intro {
+    padding-top: 10px;
+    padding-bottom: 0;
+    min-height: 0; }
+    section.intro .span12 p:last-child {
+      margin-bottom: 0; }
+  section.content {
+    background-color: #34b8d0;
+    color: #282828;
+    padding-top: 20px;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center; }
+  section.sponsors h2 {
+    margin-bottom: 20px; }
+  section.startups .startup {
+    margin-bottom: 20px; }
+    section.startups .startup .logo {
+      text-align: center; }
+
+.nav {
+  min-height: auto;
+  margin: 0 0 20px 0;
+  padding: 0;
+  background-color: #282828;
+  font-size: 1.1em; }
+
+nav {
+  min-height: 0;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center; }
+
+.nav-list {
+  padding-left: 0;
+  margin-left: 0; }
+  .nav-list li {
+    text-align: center;
+    display: inline;
+    margin: 0 1%;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .nav-list li:before {
+      content: "|";
+      color: #bbbbbb;
+      position: relative;
+      right: 1%; }
+    .nav-list li:first-child:before {
+      content: ""; }
+  .nav-list a {
+    transition: background-color 0.3s ease-in-out 0s;
+    text-decoration: none;
+    font: 800 1em "Open sans";
+    font-variant: small-caps;
+    color: #bbbbbb;
+    transition: color 0.3s ease-in-out 0s; }
+    .nav-list a:visited {
+      text-decoration: none;
+      font: 800 1em "Open sans";
+      font-variant: small-caps;
+      color: #bbbbbb;
+      transition: color 0.3s ease-in-out 0s; }
+    .nav-list a:hover {
+      color: white;
+      transition: color 0.1s ease-in-out 0s; }
+
+.table th {
+  text-align: center; }
+.table td {
+  text-align: center;
+  vertical-align: middle; }
+.table tr td:first-child {
+  text-align: right;
+  vertical-align: top;
+  padding: 0 4px 8px 8px;
+  font-weight: 300;
+  font-size: 12px; }
+.table td.withcontent {
+  padding: 2px;
+  font-size: 20px; }
+
+h2 {
+  font: 800 24px/28px "open sans";
+  margin-bottom: 40px; }
+
+table a {
+  font-size: 20px;
+  line-height: 28px;
+  text-decoration: underline; }
+
+.demonight, .demonight a {
+  background-color: #f16e25 !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
+.edgenight, .edgenight a {
+  background-color: #7aa922 !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
+.edgeday, .edgeday a {
+  background-color: #e72b80 !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
+.hackathon, .hackathon a {
+  background-color: #4dc4d6 !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
+.barcampalsace, .barcampalsace a {
+  background-color: #faae0b !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
+.summercamp, .summercamp a {
+  background-color: #9e2698 !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
+table .demonight:hover, table .demonight:hover a {
+  background-color: #f48e55 !important; }
+table .edgenight:hover, table .edgenight:hover a {
+  background-color: #99d42a !important; }
+table .edgeday:hover, table .edgeday:hover a {
+  background-color: #ec599b !important; }
+table .hackathon:hover, table .hackathon:hover a {
+  background-color: #76d2e0 !important; }
+table .barcampalsace:hover, table .barcampalsace:hover a {
+  background-color: #fbbf3d !important; }
+table .summercamp:hover, table .summercamp:hover a {
+  background-color: #c730c0 !important; }
+
+footer {
+  min-height: 0;
+  padding: 1em 0;
+  text-align: center;
+  background-color: #282828;
+  color: white; }
+
+ul.sponsors {
+  text-align: center; }
+  ul.sponsors li {
+    padding: 0;
+    margin: 0 20px 20px 0; }
+  ul.sponsors img {
+    height: auto;
+    max-width: 300px;
+    max-height: 70px; }
+    ul.sponsors img.smaller {
+      max-height: 60px; }
+
+p.date, p.venue {
+  margin: 0; }
+p.type {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 800; }
+
+.sticky {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.small-caps {
+  font-variant: small-caps;
+  text-transform: uppercase; }
+
+.co {
+  color: #34b8d0; }
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-left: 0;
+    padding-right: 0; }
+
+  section {
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media screen and (max-width: 510px) {
+  header h1 {
+    margin-top: 150px; } }
+/**** MEDIA QUERIES **** */
+/*                              319px */
+@media screen and (max-width: 19.938em) {
+  .nav-list {
+    width: 100%;
+    padding-left: 0; }
+    .nav-list li {
+      width: 100%; } }
+/*                              500px */
+@media screen and (max-width: 31.25em) {
+  nav {
+    padding: 0;
+    margin: 0; }
+
+  .nav-list {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 0; }
+    .nav-list li {
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 0.5em;
+      color: transparent;
+      transition: background-color 0.3s ease-in-out 0s;
+      display: block; }
+      .nav-list li:hover, .nav-list li:active {
+        background-color: #545454;
+        transition: background-color 0.1s ease-in-out 0s; }
+      .nav-list li:first-child a {
+        border-top: 0; }
+    .nav-list a {
+      display: block;
+      margin: 0 !important;
+      padding: 0.4em 0 !important;
+      width: 100%;
+      color: white;
+      text-align: center; }
+      .nav-list a:hover, .nav-list a:visited {
+        color: white;
+        text-align: center; } }
+/*                              501px                    750px */
+@media screen and (min-width: 31.313em) and (max-width: 46.875em) {
+  nav {
+    padding: 0;
+    margin: 0; }
+
+  .nav-list {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 0; }
+    .nav-list li {
+      float: left;
+      width: 33.333%;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 0.5em;
+      color: transparent;
+      transition: background-color 0.3s ease-in-out 0s; }
+      .nav-list li:hover, .nav-list li:active {
+        background-color: #545454;
+        transition: background-color 0.1s ease-in-out 0s; }
+    .nav-list a {
+      display: block;
+      margin: 0 !important;
+      padding: 0.4em 0 !important;
+      width: 100%; } }
+/*                              750px */
+@media screen and (max-width: 46.875em) {
+  .nav-list li {
+    margin: 0; }
+    .nav-list li:before {
+      content: ""; }
+  .nav-list a {
+    color: white; }
+    .nav-list a:hover, .nav-list a:visited, .nav-list a:active {
+      color: white; } }
