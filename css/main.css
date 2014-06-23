@@ -215,6 +215,11 @@ table a {
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
+.shadok, .shadok a {
+  background-color: #021b68 !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
 table .startupstories:hover, table .startupstories:hover a {
   background-color: #f48e55 !important; }
 table .edgenight:hover, table .edgenight:hover a {
