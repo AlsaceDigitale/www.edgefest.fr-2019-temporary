@@ -37,7 +37,7 @@ header {
   height: 500px;
   color: white;
   width: 100%;
-  background: url("/img/rivetoile.jpg") no-repeat center top fixed;
+  background: url("/img/bleu_small.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -49,12 +49,15 @@ header {
       color: white;
       text-decoration: none; }
   header h1 {
-    margin-top: 164px;
+    color: #fda544;
+    margin-top: 100px;
     font: 400 64px/64px "Londrina Solid";
     text-shadow: 1px 1px black; }
   header p.subtitle {
+    color: white;
     margin-top: 20px;
-    font: 400 30px/36px "gentium book basic"; }
+    font: 800 18px/36px "Arial", sans-serif;
+    text-transform: uppercase; }
   header p.subsubtitle {
     margin-top: 20px;
     font: 400 26px/32px "gentium book basic"; }
@@ -62,6 +65,8 @@ header {
     text-align: center; }
   header p.subtitle, header p.subsubtitle {
     text-align: center; }
+  header img#logo_main {
+    max-width: 60%; }
 
 section {
   background-color: white;
@@ -365,4 +370,7 @@ p.type {
   .nav-list a {
     color: white; }
     .nav-list a:hover, .nav-list a:visited, .nav-list a:active {
-      color: white; } }
+      color: white; }
+
+  header img#logo_main {
+    max-width: 90%; } }

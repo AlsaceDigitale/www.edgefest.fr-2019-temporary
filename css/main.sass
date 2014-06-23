@@ -1,3 +1,5 @@
+$edgefest_front_color: #fda544
+
 body
   font-family: 'Open Sans', sans-serif
   color: #282828
@@ -36,7 +38,7 @@ header
   height: 500px
   color: white
   width: 100%
-  background: url("/img/rivetoile.jpg") no-repeat center top fixed
+  background: url("/img/bleu_small.jpg") no-repeat center center fixed
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
@@ -48,13 +50,16 @@ header
       color: white
       text-decoration: none
   h1
-    margin-top: 164px
+    color: $edgefest_front_color
+    margin-top: 100px
     font: 400 64px/64px 'Londrina Solid'
     text-shadow: 1px 1px #000000
   p
     &.subtitle
+      color: white
       margin-top: 20px
-      font: 400 30px/36px "gentium book basic"
+      font: 800 18px/36px "Arial", sans-serif
+      text-transform: uppercase
     &.subsubtitle
       margin-top: 20px
       font: 400 26px/32px "gentium book basic"
@@ -63,6 +68,8 @@ header
   p
     &.subtitle, &.subsubtitle
       text-align: center
+  img#logo_main
+    max-width: 60%
 
 section
   background-color: white
@@ -384,3 +391,7 @@ p
       color: white
       &:hover, &:visited, &:active
         color: white
+
+  header
+    img#logo_main
+      max-width: 90%
