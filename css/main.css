@@ -259,7 +259,6 @@ ul.sponsors {
     margin: 0 20px 20px 0; }
   ul.sponsors img {
     height: auto;
-    max-width: 300px;
     max-height: 70px; }
     ul.sponsors img.smaller {
       max-height: 60px; }
