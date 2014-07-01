@@ -217,6 +217,11 @@ table a {
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
+.barcampcci, .barcampcci a {
+  background-color: gray !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
 .summercamp, .summercamp a {
   background-color: #9e2698 !important;
   color: white;
@@ -237,6 +242,8 @@ table .hackathon:hover, table .hackathon:hover a {
   background-color: #76d2e0 !important; }
 table .barcampalsace:hover, table .barcampalsace:hover a {
   background-color: #fbbf3d !important; }
+table .barcampcci:hover, table .barcampcci:hover a {
+  background-color: #9a9a9a !important; }
 table .summercamp:hover, table .summercamp:hover a {
   background-color: #c730c0 !important; }
 
