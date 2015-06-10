@@ -1,0 +1,23 @@
+<section class="kinojam" id="kinojam">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Kino Jam</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-8">
+        <p class="date">Date : Dimanche 5 juillet, de 10h00 à 18h00</p>
+        <p class="venue">Lieu : Shadok</p>
+        <p class="type">Événement gratuit.</p>
+        <p class="concept">
+        Journée “booste ton projet” audiovisuel, transmédia en partenariat avec la Safire et l’agence culturelle d’Alsace.
+        Vous êtes développeur, Web designer, réalisateur, auteur ou un esprit créatif ? 
+        Venez participer à cette journée de création collaborative autour de la filière image.
+        Le principe est simple. Vous pouvez soit proposer un projet aux participants de la session, soit favoriser le développement d’un des projets pitchés en l’enrichissant de votre regard constructif et bienveillant.
+        La matinée de cette première Kinojam sera consacrée à la présentation des projets. Un repas convivial permettra de constituer les équipes autour des différentes propositions. L’après-midi sera consacrée à les enrichir de vos contributions, de votre expertise et ainsi leur impulser une nouvelle dynamique.
+        </p>
+      </div>
+    </div>  
+  </div>
+</section>
