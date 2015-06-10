@@ -52,7 +52,7 @@ header {
     color: #fda544;
     margin-top: 100px;
     font: 400 64px/64px "Londrina Solid";
-    text-shadow: 1px 1px black; }
+    text-shadow: 1px 1px #000000; }
   header p.subtitle {
     color: white;
     margin-top: 20px;
@@ -139,7 +139,7 @@ nav {
     box-sizing: border-box; }
     .nav-list li:before {
       content: "|";
-      color: #bbbbbb;
+      color: #BBB;
       position: relative;
       right: 1%; }
     .nav-list li:first-child:before {
@@ -149,13 +149,13 @@ nav {
     text-decoration: none;
     font: 800 1em "Open sans";
     font-variant: small-caps;
-    color: #bbbbbb;
+    color: #BBB;
     transition: color 0.3s ease-in-out 0s; }
     .nav-list a:visited {
       text-decoration: none;
       font: 800 1em "Open sans";
       font-variant: small-caps;
-      color: #bbbbbb;
+      color: #BBB;
       transition: color 0.3s ease-in-out 0s; }
     .nav-list a:hover {
       color: white;
@@ -218,7 +218,7 @@ table a {
   transition: all 0.3s ease-in-out 0s; }
 
 .barcampcci, .barcampcci a {
-  background-color: gray !important;
+  background-color: #808080 !important;
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
@@ -229,6 +229,26 @@ table a {
 
 .shadok, .shadok a {
   background-color: #021b68 !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
+.kinojam, .kinojam a {
+  background-color: #c29d0b !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
+.gamejam, .gamejam a {
+  background-color: #d14233 !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
+.espacessonores, .espacessonores a {
+  background-color: #34495e !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
+.straliensmillenium, .straliensmillenium a {
+  background-color: #24c348 !important;
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
@@ -246,6 +266,14 @@ table .barcampcci:hover, table .barcampcci:hover a {
   background-color: #9a9a9a !important; }
 table .summercamp:hover, table .summercamp:hover a {
   background-color: #c730c0 !important; }
+table .kinojam:hover, table .kinojam:hover a {
+  background-color: #f1c40f !important; }
+table .gamejam:hover, table .gamejam:hover a {
+  background-color: #db695d !important; }
+table .espacessonores:hover, table .espacessonores:hover a {
+  background-color: #46627f !important; }
+table .straliensmillenium:hover, table .straliensmillenium:hover a {
+  background-color: #3fdb62 !important; }
 
 footer {
   min-height: 0;
@@ -315,7 +343,7 @@ p.type {
 @media screen and (max-width: 510px) {
   header h1 {
     margin-top: 150px; } }
-/**** MEDIA QUERIES **** */
+/***** MEDIA QUERIES **** */
 /*                              319px */
 @media screen and (max-width: 19.938em) {
   .nav-list {
@@ -395,3 +423,5 @@ p.type {
 
   header img#logo_main {
     max-width: 90%; } }
+
+/*# sourceMappingURL=main.css.map */
