@@ -96,6 +96,9 @@ section {
     min-height: 0; }
     section.intro .col-xs-12 p:last-child {
       margin-bottom: 0; }
+    section.intro a {
+      text-decoration: none;
+      font-size: 108%; }
   section.content {
     background-color: #34b8d0;
     color: #282828;
@@ -191,6 +194,42 @@ table a {
   font-size: 20px;
   line-height: 28px;
   text-decoration: underline; }
+
+.color-startupstories {
+  color: #f16e25; }
+
+.color-edgenight {
+  color: #7aa922; }
+
+.color-edgeday {
+  color: #e72b80; }
+
+.color-hackathon {
+  color: #4dc4d6; }
+
+.color-barcampalsace {
+  color: #faae0b; }
+
+.color-barcampcci {
+  color: #808080; }
+
+.color-summercamp {
+  color: #9e2698; }
+
+.color-shadok {
+  color: #021b68; }
+
+.color-kinojam {
+  color: #c29d0b; }
+
+.color-gamejam {
+  color: #d14233; }
+
+.color-espacessonores {
+  color: #34495e; }
+
+.color-straliensmillenium {
+  color: #24c348; }
 
 .startupstories, .startupstories a {
   background-color: #f16e25 !important;
