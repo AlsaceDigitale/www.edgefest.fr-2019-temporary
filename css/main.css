@@ -224,7 +224,7 @@ table a {
   color: #021b68; }
 
 .color-kinojam {
-  color: #c29d0b; }
+  color: #339edd; }
 
 .color-gamejam {
   color: #d14233; }
@@ -233,7 +233,7 @@ table a {
   color: #34495e; }
 
 .color-straliensmillenium {
-  color: #24c348; }
+  color: #41ad49; }
 
 .startupstories, .startupstories a {
   background-color: #f16e25 !important;
@@ -276,7 +276,7 @@ table a {
   transition: all 0.3s ease-in-out 0s; }
 
 .kinojam, .kinojam a {
-  background-color: #c29d0b !important;
+  background-color: #339edd !important;
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
@@ -291,7 +291,7 @@ table a {
   transition: all 0.3s ease-in-out 0s; }
 
 .straliensmillenium, .straliensmillenium a {
-  background-color: #24c348 !important;
+  background-color: #41ad49 !important;
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
@@ -310,13 +310,13 @@ table .barcampcci:hover, table .barcampcci:hover a {
 table .summercamp:hover, table .summercamp:hover a {
   background-color: #c730c0 !important; }
 table .kinojam:hover, table .kinojam:hover a {
-  background-color: #f1c40f !important; }
+  background-color: #5fb3e4 !important; }
 table .gamejam:hover, table .gamejam:hover a {
   background-color: #db695d !important; }
 table .espacessonores:hover, table .espacessonores:hover a {
   background-color: #46627f !important; }
 table .straliensmillenium:hover, table .straliensmillenium:hover a {
-  background-color: #3fdb62 !important; }
+  background-color: #5ec366 !important; }
 
 footer {
   min-height: 0;
