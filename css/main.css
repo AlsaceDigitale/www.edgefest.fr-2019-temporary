@@ -385,7 +385,7 @@ p.type {
     width: 100%; } }
 @media screen and (max-width: 510px) {
   header h1 {
-    margin-top: 150px; } }
+    margin-top: 60px; } }
 /***** MEDIA QUERIES **** */
 /*                              319px */
 @media screen and (max-width: 19.938em) {
