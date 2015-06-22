@@ -38,6 +38,15 @@
     </header>
     {% include nav.html %}
     {{ content }}
+    {% if page.share %}
+    <div class="social-share">
+      <span>Partagez sur : &nbsp;</span>
+      <a href="https://twitter.com/intent/tweet?text={{ page.share | uri_escape }}&amp;url={{ site.url }}{{ page.url }}&amp;via=AlsaceDigitale&amp;hashtags={{ tagStr }}" target="_blank" title="Partager sur Twitter"><i class="fa fa-twitter-square"></i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?t={{ page.share | uri_escape }}&amp;u={{ site.url }}{{ page.url }}" target="_blank" title="Partager sur Facebook"><i class="fa fa-facebook-square"></i></a>
+      <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" title="Partager sur Google Plus"><i class="fa fa-google-plus-square"></i></a>
+      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;title={{ page.share | uri_escape }}&amp;url={{ site.url }}{{ page.url }}&amp;source=http%3a%2f%2fzhangwenli.com" target="_blank" title="Partager sur LinkedIn"><i class="fa fa-linkedin-square"></i></a>
+    </div>
+    {% endif %}
     <section class="sponsors">
       <div class="container">
         <div class="row">
@@ -68,7 +77,7 @@
                 <li><a href="https://fr-fr.facebook.com/panimix" target="_blank"><img class="smaller" src="img/logos/thumb/Panimix.png"/></a></li>
                 <li><a href="http://www.culture-alsace.org/" target="_blank"><img class="smaller" src="img/logos/thumb/agence-culturelle-dalsace.png"/></a></li>
                 <li><a href="http://www.lafabriqueamiam.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/lafabrique.png"/></a></li>
-                
+
             </ul>
             <h2>Partenaires média</h2>
 <!--               <li><a href="http://services-numeriques.unistra.fr/culture-numerique/centre-de-culture-numerique.html" target="_blank"><img src="img/ccn.png"/></a></li>

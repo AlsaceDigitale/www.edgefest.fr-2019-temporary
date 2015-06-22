@@ -316,6 +316,15 @@ table .espacessonores:hover, table .espacessonores:hover a {
 table .straliensmillenium:hover, table .straliensmillenium:hover a {
   background-color: #5ec366 !important; }
 
+.social-share {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 170%;
+  background-color: #d5d5d5; }
+  .social-share i.fa {
+    color: #333; }
+
 footer {
   min-height: 0;
   padding: 1em 0;
