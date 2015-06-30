@@ -167,30 +167,35 @@ nav {
 .table td {
   text-align: center;
   vertical-align: middle; }
-.table tr td:first-child {
+
+h2 {
+  font: 800 24px/28px "open sans";
+  margin-bottom: 40px; }
+
+h3 {
+  font: 800 21px "open sans";
+  margin-bottom: 20px; }
+
+#planning .table tr td:first-child {
   text-align: right;
   vertical-align: top;
   padding: 0 4px 8px 8px;
   font-weight: 300;
   font-size: 12px; }
-.table td.withcontent {
+#planning .table td.withcontent {
   padding: 2px;
   font-size: 16px;
   line-height: 20px; }
-  .table td.withcontent.summercamp {
+  #planning .table td.withcontent.summercamp {
     font-size: 14px;
     line-height: 18px; }
-  .table td.withcontent a {
+  #planning .table td.withcontent a {
     font-size: inherit;
     line-height: inherit; }
-  .table td.withcontent .subtitle {
+  #planning .table td.withcontent .subtitle {
     font-size: 90%;
     color: #ccc;
     margin-top: 5px; }
-
-h2 {
-  font: 800 24px/28px "open sans";
-  margin-bottom: 40px; }
 
 table a {
   font-size: 20px;
