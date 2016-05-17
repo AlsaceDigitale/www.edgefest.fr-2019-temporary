@@ -1,4 +1,4 @@
 name: EdgeFest
 url: http://edgefest.fr
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
