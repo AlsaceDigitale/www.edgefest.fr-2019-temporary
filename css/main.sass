@@ -38,7 +38,8 @@ header
   height: 380px
   color: white
   width: 100%
-  background: url("/img/bleu_small.png") no-repeat center center fixed
+  background: url("/img/rivetoile.jpg") no-repeat center center fixed
+  /*background: #bbf*/
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
@@ -52,8 +53,15 @@ header
   h1
     color: $edgefest_front_color
     margin-top: 50px
-    font: 400 64px/64px 'Londrina Solid'
-    text-shadow: 1px 1px #000000
+    font: 400 80px/80px 'Londrina Solid'
+    text-shadow: 2px 2px #000000
+    text-align: center
+  h2
+    color: $edgefest_front_color
+    margin-top: 20px
+    font: 400 32px/32px 'Londrina Solid'
+    text-shadow: 2px 2px #000000
+    text-align: center
   p
     &.subtitle
       color: white
@@ -63,8 +71,6 @@ header
     &.subsubtitle
       margin-top: 20px
       font: 400 26px/32px "gentium book basic"
-  h1
-    text-align: center
   p
     &.subtitle, &.subsubtitle
       text-align: center
@@ -394,6 +400,9 @@ p
 
 .co
   color: #34b8d0
+
+.margin0
+  margin: 0!important
 
 @media screen and (max-width: 767px)
   body

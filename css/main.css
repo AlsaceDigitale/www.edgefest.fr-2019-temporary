@@ -37,7 +37,8 @@ header {
   height: 380px;
   color: white;
   width: 100%;
-  background: url("/img/bleu_small.png") no-repeat center center fixed;
+  background: url("/img/rivetoile.jpg") no-repeat center center fixed;
+  /*background: #bbf */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -51,8 +52,15 @@ header {
   header h1 {
     color: #fda544;
     margin-top: 50px;
-    font: 400 64px/64px "Londrina Solid";
-    text-shadow: 1px 1px #000000; }
+    font: 400 80px/80px "Londrina Solid";
+    text-shadow: 2px 2px #000000;
+    text-align: center; }
+  header h2 {
+    color: #fda544;
+    margin-top: 20px;
+    font: 400 32px/32px "Londrina Solid";
+    text-shadow: 2px 2px #000000;
+    text-align: center; }
   header p.subtitle {
     color: white;
     margin-top: 20px;
@@ -61,8 +69,6 @@ header {
   header p.subsubtitle {
     margin-top: 20px;
     font: 400 26px/32px "gentium book basic"; }
-  header h1 {
-    text-align: center; }
   header p.subtitle, header p.subsubtitle {
     text-align: center; }
   header img#logo_main {
@@ -315,7 +321,7 @@ table .kinojam:hover, table .kinojam:hover a {
 table .gamejam:hover, table .gamejam:hover a {
   background-color: #db695d !important; }
 table .espacessonores:hover, table .espacessonores:hover a {
-  background-color: #46627f !important; }
+  background-color: #46637f !important; }
 table .straliensmillenium:hover, table .straliensmillenium:hover a {
   background-color: #5ec366 !important; }
 
@@ -381,6 +387,9 @@ p.type {
 
 .co {
   color: #34b8d0; }
+
+.margin0 {
+  margin: 0 !important; }
 
 @media screen and (max-width: 767px) {
   body {
