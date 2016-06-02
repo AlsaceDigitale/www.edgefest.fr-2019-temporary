@@ -38,13 +38,21 @@ header
   height: 380px
   color: white
   width: 100%
-  background: url("/img/rivetoile.jpg") no-repeat center center fixed
+  background: url("/img/background2016.png") no-repeat
+  background-size: 100% auto
+  background-position: center center
   /*background: #bbf*/
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
   background-size: cover
   a.mainlink
+    display: block
+    width: 600px
+    height: 280px
+    margin: auto
+    margin-top: 20px
+    max-width: 100%
     color: white
     text-decoration: none
     &:hover, &:visited
@@ -421,7 +429,7 @@ p
 
 /***** MEDIA QUERIES ****
 
-/*                              319px
+/*                              319px*/
 @media screen and (max-width: 19.938em)
   .nav-list
     width: 100%
@@ -429,8 +437,15 @@ p
       width: 100%
     padding-left: 0
 
-/*                              500px
+/*                              500px*/
 @media screen and (max-width: 31.25em)
+  header
+    background-size: auto 200px
+    background-position: center bottom
+    height: 220px
+    a.mainlink
+      width: 100%
+      height: 100%
   nav
     padding: 0
     margin: 0
@@ -462,8 +477,15 @@ p
         color: white
         text-align: center
 
-/*                              501px                    750px
+/*                              501px                    750px*/
 @media screen and (min-width: 31.313em) and (max-width: 46.875em)
+  header  
+    background-size: auto 250px
+    background-position: center bottom
+    height: 270px
+    a.mainlink
+      width: 100%
+      height: 100%
   nav
     padding: 0
     margin: 0
@@ -488,7 +510,7 @@ p
       padding: 0.4em 0 !important
       width: 100%
 
-/*                              750px
+/*                              750px*/
 @media screen and (max-width: 46.875em)
   .nav-list
     li
@@ -503,3 +525,4 @@ p
   header
     img#logo_main
       max-width: 90%
+
