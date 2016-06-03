@@ -12,7 +12,7 @@
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:type" content="website" />
     {% if page.facebook_description %}<meta property="og:description" content="{{ page.facebook_description }}" />{% endif %}
-    {% if page.facebook_image %}<meta property="og:image" content="{{ page.facebook_image }}" />{% endif %}
+    <meta property="og:image" content="{% if page.facebook_image %}{{ page.facebook_image }}{% else %}http://www.edgefest.fr/img/background2016.png{% endif %}" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
