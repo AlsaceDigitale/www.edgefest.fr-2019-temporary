@@ -229,7 +229,7 @@ table a {
 .color-demodebat {
   color: #faae0b; }
 
-.color-barcampcci {
+.color-demonight {
   color: #808080; }
 
 .color-summercamp {
@@ -275,7 +275,7 @@ table a {
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
-.barcampcci, .barcampcci a {
+.demonight, .demonight a {
   background-color: #808080 !important;
   color: white;
   transition: all 0.3s ease-in-out 0s; }
@@ -320,7 +320,7 @@ table .hackathon:hover, table .hackathon:hover a {
   background-color: #76d2e0 !important; }
 table .demodebat:hover, table .demodebat:hover a {
   background-color: #fbbf3d !important; }
-table .barcampcci:hover, table .barcampcci:hover a {
+table .demonight:hover, table .demonight:hover a {
   background-color: #9a9a9a !important; }
 table .summercamp:hover, table .summercamp:hover a {
   background-color: #c730c0 !important; }
