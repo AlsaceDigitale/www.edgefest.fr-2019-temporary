@@ -226,7 +226,7 @@ table a {
 .color-hackathon {
   color: #4dc4d6; }
 
-.color-barcampalsace {
+.color-demodebat {
   color: #faae0b; }
 
 .color-barcampcci {
@@ -247,7 +247,7 @@ table a {
 .color-espacessonores {
   color: #34495e; }
 
-.color-straliensmillenium {
+.color-hacksxb {
   color: #41ad49; }
 
 .startupstories, .startupstories a {
@@ -270,7 +270,7 @@ table a {
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
-.barcampalsace, .barcampalsace a {
+.demodebat, .demodebat a {
   background-color: #faae0b !important;
   color: white;
   transition: all 0.3s ease-in-out 0s; }
@@ -305,7 +305,7 @@ table a {
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
-.straliensmillenium, .straliensmillenium a {
+.hacksxb, .hacksxb a {
   background-color: #41ad49 !important;
   color: white;
   transition: all 0.3s ease-in-out 0s; }
@@ -318,7 +318,7 @@ table .edgeday:hover, table .edgeday:hover a {
   background-color: #ec599b !important; }
 table .hackathon:hover, table .hackathon:hover a {
   background-color: #76d2e0 !important; }
-table .barcampalsace:hover, table .barcampalsace:hover a {
+table .demodebat:hover, table .demodebat:hover a {
   background-color: #fbbf3d !important; }
 table .barcampcci:hover, table .barcampcci:hover a {
   background-color: #9a9a9a !important; }
@@ -330,7 +330,7 @@ table .gamejam:hover, table .gamejam:hover a {
   background-color: #db695d !important; }
 table .espacessonores:hover, table .espacessonores:hover a {
   background-color: #46637f !important; }
-table .straliensmillenium:hover, table .straliensmillenium:hover a {
+table .hacksxb:hover, table .hacksxb:hover a {
   background-color: #5ec366 !important; }
 
 .social-share {
