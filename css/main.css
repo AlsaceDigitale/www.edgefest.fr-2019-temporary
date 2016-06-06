@@ -249,10 +249,10 @@ table a {
   color: #021b68; }
 
 .color-kinojam {
-  color: #339edd; }
-
-.color-gamejam {
   color: #d14233; }
+
+.color-digitalforum {
+  color: #339edd; }
 
 .color-espacessonores {
   color: #34495e; }
@@ -301,12 +301,12 @@ table a {
   transition: all 0.3s ease-in-out 0s; }
 
 .kinojam, .kinojam a {
-  background-color: #339edd !important;
+  background-color: #d14233 !important;
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
-.gamejam, .gamejam a {
-  background-color: #d14233 !important;
+.digitalforum, .digitalforum a {
+  background-color: #339edd !important;
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
@@ -335,9 +335,9 @@ table .demonight:hover, table .demonight:hover a {
 table .summercamp:hover, table .summercamp:hover a {
   background-color: #c730c0 !important; }
 table .kinojam:hover, table .kinojam:hover a {
-  background-color: #5fb3e4 !important; }
-table .gamejam:hover, table .gamejam:hover a {
   background-color: #db695d !important; }
+table .digitalforum:hover, table .digitalforum:hover a {
+  background-color: #5fb3e4 !important; }
 table .espacessonores:hover, table .espacessonores:hover a {
   background-color: #46637f !important; }
 table .hacksxb:hover, table .hacksxb:hover a {
