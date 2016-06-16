@@ -235,7 +235,8 @@ $startupstories_color: #f16e25
 $edgenight_color: darken(#99d42a, 10%)
 $edgeday_color: #e72b80
 $hackathon_color: #4dc4d6
-$demodebat_color: #faae0b
+$demodebat_color: #a9834a
+$apero_color: #faae0b
 $summercamp_color: #9e2698
 $shadok_color: #021b68
 $demonight_color: #808080
@@ -254,6 +255,8 @@ $hacksxb_color: #41ad49
   color: $hackathon_color
 .color-demodebat
   color: $demodebat_color
+.color-apero
+  color: $apero_color
 .color-demonight
   color: $demonight_color
 .color-summercamp
@@ -291,6 +294,11 @@ $hacksxb_color: #41ad49
 
 .demodebat, .demodebat a
   background-color: $demodebat_color !important
+  color: white
+  transition: all 0.3s ease-in-out 0s
+
+.apero, .apero a
+  background-color: $apero_color !important
   color: white
   transition: all 0.3s ease-in-out 0s
 
@@ -340,6 +348,8 @@ table
     background-color: lighten($hackathon_color, 10%) !important
   .demodebat:hover, .demodebat:hover a
     background-color: lighten($demodebat_color, 10%) !important
+  .apero:hover, .apero:hover a
+    background-color: lighten($apero_color, 10%) !important
   .demonight:hover, .demonight:hover a
     background-color: lighten($demonight_color, 10%) !important
   .summercamp:hover, .summercamp:hover a

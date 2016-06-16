@@ -237,6 +237,9 @@ table a {
   color: #4dc4d6; }
 
 .color-demodebat {
+  color: #a9834a; }
+
+.color-apero {
   color: #faae0b; }
 
 .color-demonight {
@@ -281,6 +284,11 @@ table a {
   transition: all 0.3s ease-in-out 0s; }
 
 .demodebat, .demodebat a {
+  background-color: #a9834a !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
+.apero, .apero a {
   background-color: #faae0b !important;
   color: white;
   transition: all 0.3s ease-in-out 0s; }
@@ -329,6 +337,8 @@ table .edgeday:hover, table .edgeday:hover a {
 table .hackathon:hover, table .hackathon:hover a {
   background-color: #76d2e0 !important; }
 table .demodebat:hover, table .demodebat:hover a {
+  background-color: #bd9b69 !important; }
+table .apero:hover, table .apero:hover a {
   background-color: #fbbf3d !important; }
 table .demonight:hover, table .demonight:hover a {
   background-color: #9a9a9a !important; }
