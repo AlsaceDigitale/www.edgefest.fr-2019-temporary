@@ -4,6 +4,21 @@ $(function() {
 		$("#streampanimix").css("display", "block");
 		$("#streampanimix audio").attr("autoplay", "autoplay");
 	}*/
+	$(".planning-hidden").hide();
+
+	$(".planning-hidden-trigger").click(function() {
+		if(!$(this).hasClass("planning-hidden-open")) {
+			$(".planning-hidden").slideDown();
+			$(this).text("Masquer les événements passés");
+		}
+		else
+		{
+			$(".planning-hidden").slideUp();
+			$(this).text("Afficher les événements passés");
+		}
+
+		$(this).toggleClass("planning-hidden-open");
+	});
 
 	$(window).resize(function() {
 		setAspectRatio();
