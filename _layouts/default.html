@@ -46,10 +46,9 @@
     {% if page.share %}
     <div class="social-share">
       <span>Partagez sur : &nbsp;</span>
-      <a href="https://twitter.com/intent/tweet?text={{ page.share | uri_escape }}&amp;url={{ site.url }}{{ page.url }}&amp;via=AlsaceDigitale&amp;hashtags={{ tagStr }}" target="_blank" title="Partager sur Twitter"><i class="fa fa-twitter-square"></i></a>
-      <a href="https://www.facebook.com/sharer/sharer.php?t={{ page.share | uri_escape }}&amp;u={{ site.url }}{{ page.url }}" target="_blank" title="Partager sur Facebook"><i class="fa fa-facebook-square"></i></a>
+      <a href="https://twitter.com/intent/tweet?text={{ page.share | uri_escape | replace: "#", "%23" }}&amp;url={{ site.url }}{{ page.url }}&amp;via=AlsaceDigitale&amp;hashtags={{ tagStr }}" target="_blank" title="Partager sur Twitter"><i class="fa fa-twitter-square"></i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?t={{ page.share | uri_escape | replace: "#", "%23" }}&amp;u={{ site.url }}{{ page.url }}" target="_blank" title="Partager sur Facebook"><i class="fa fa-facebook-square"></i></a>
       <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" title="Partager sur Google Plus"><i class="fa fa-google-plus-square"></i></a>
-      <a href="http://www.linkedin.com/shareArticle?mini=true&amp;title={{ page.share | uri_escape }}&amp;url={{ site.url }}{{ page.url }}&amp;source=http%3a%2f%2fzhangwenli.com" target="_blank" title="Partager sur LinkedIn"><i class="fa fa-linkedin-square"></i></a>
     </div>
     {% endif %}
     <section class="sponsors">
