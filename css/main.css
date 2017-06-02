@@ -40,7 +40,7 @@ header {
   height: 380px;
   color: white;
   width: 100%;
-  background: url("/img/background2017.jpg") no-repeat;
+  background: url("/img/background2017.png") no-repeat;
   background-size: 100% auto;
   background-position: center center;
   /*background: #bbf */
@@ -50,10 +50,10 @@ header {
   background-size: cover; }
   header a.mainlink {
     display: block;
-    width: 600px;
-    height: 280px;
+    width: 850px;
+    height: 220px;
     margin: auto;
-    margin-top: 115px;
+    margin-top: 30px;
     max-width: 100%;
     color: white;
     text-decoration: none; }
@@ -447,16 +447,34 @@ p.type {
     padding-left: 0; }
     .nav-list li {
       width: 100%; } }
-/*                              500px */
-@media screen and (max-width: 31.25em) {
+@media screen and (max-width: 380px) {
   header {
-    background-size: auto 200px;
-    background-position: center bottom;
-    height: 220px; }
+    height: 300px !important;
+    background-size: auto 300px !important; }
     header a.mainlink {
       width: 100%;
-      height: 220px; }
-
+      height: 300px;
+      margin-top: 0; } }
+@media screen and (max-width: 564px) {
+  header {
+    height: 400px;
+    background: url("/img/background2017_m.png") no-repeat;
+    background-position: center;
+    background-size: auto 400px; }
+    header a.mainlink {
+      width: 100%;
+      height: 400px;
+      margin-top: 0; } }
+@media screen and (min-width: 565px) and (max-width: 900px) {
+  header {
+    height: 250px;
+    background-size: auto 250px; }
+    header a.mainlink {
+      width: 100%;
+      height: 250px;
+      margin-top: 0; } }
+/*                              500px */
+@media screen and (max-width: 31.25em) {
   nav {
     padding: 0;
     margin: 0; }
@@ -490,14 +508,6 @@ p.type {
         text-align: center; } }
 /*                              501px                    750px */
 @media screen and (min-width: 31.313em) and (max-width: 46.875em) {
-  header {
-    background-size: auto 250px;
-    background-position: center bottom;
-    height: 270px; }
-    header a.mainlink {
-      width: 100%;
-      height: 270px; }
-
   nav {
     padding: 0;
     margin: 0; }
