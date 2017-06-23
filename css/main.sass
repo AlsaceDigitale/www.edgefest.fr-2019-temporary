@@ -246,6 +246,7 @@ $pointest_color: lighten(#c0392b, 5%)
 $digitalforum_color: darken(#5fb3e4, 10%)
 $espacessonores_color: #34495e
 $hacksxb_color: #41ad49
+$fablab_color: #f9ef66
 
 .color-startupstories
   color: $startupstories_color
@@ -273,6 +274,8 @@ $hacksxb_color: #41ad49
   color: $espacessonores_color
 .color-hacksxb
   color: $hacksxb_color
+.color-fablab
+  color: $fablab_color
 
 .startupstories, .startupstories a
   background-color: $startupstories_color !important
@@ -339,6 +342,11 @@ $hacksxb_color: #41ad49
   color: white
   transition: all 0.3s ease-in-out 0s
 
+.fablab, .fablab a
+  background-color: $fablab_color !important
+  color: white
+  transition: all 0.3s ease-in-out 0s
+
 table
   .startupstories:hover, .startupstories:hover a
     background-color: lighten($startupstories_color, 10%) !important
@@ -364,6 +372,8 @@ table
     background-color: lighten($espacessonores_color, 10%) !important
   .hacksxb:hover, .hacksxb:hover a
     background-color: lighten($hacksxb_color, 10%) !important
+  .fablab:hover, .fablab:hover a
+    background-color: lighten($fablab_color, 10%) !important
 
 .social-share
   height: 70px

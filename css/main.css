@@ -266,6 +266,9 @@ table a {
 .color-hacksxb {
   color: #41ad49; }
 
+.color-fablab {
+  color: #f9ef66; }
+
 .startupstories, .startupstories a {
   background-color: #f16e25 !important;
   color: white;
@@ -331,6 +334,11 @@ table a {
   color: white;
   transition: all 0.3s ease-in-out 0s; }
 
+.fablab, .fablab a {
+  background-color: #f9ef66 !important;
+  color: white;
+  transition: all 0.3s ease-in-out 0s; }
+
 table .startupstories:hover, table .startupstories:hover a {
   background-color: #f48e55 !important; }
 table .edgenight:hover, table .edgenight:hover a {
@@ -355,6 +363,8 @@ table .espacessonores:hover, table .espacessonores:hover a {
   background-color: #46637f !important; }
 table .hacksxb:hover, table .hacksxb:hover a {
   background-color: #5ec366 !important; }
+table .fablab:hover, table .fablab:hover a {
+  background-color: #fbf497 !important; }
 
 .social-share {
   height: 70px;
