@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% if page.facebook_description %}{{ page.facebook_description }}{% endif %}">
+    <meta name="author" content="Alsace Digitale">
+    <link rel="icon" type="image/png" href="icone.png" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="website" />
+    {% if page.facebook_description %}<meta property="og:description" content="{{ page.facebook_description }}" />{% endif %}
+    <meta property="og:image" content="{% if page.facebook_image %}{{ page.facebook_image }}{% else %}http://www.edgefest.fr/img/edgefest2017-preview.jpg{% endif %}" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  {{ content }}
+</html>
