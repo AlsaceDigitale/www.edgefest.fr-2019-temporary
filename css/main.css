@@ -735,6 +735,19 @@ p.type {
     float: none; } }
 @media screen and (max-width: 500px) {
   body {
-    background-size: auto 400px; } }
+    background-size: auto 400px; }
+
+  nav .nav-list a {
+    font: 800 0.9em "Open sans";
+    padding-right: 0; }
+
+  .top-right-info {
+    right: -160px; }
+    .top-right-info .line {
+      font-size: 0.8em !important; }
+      .top-right-info .line.line3 {
+        margin-top: -103px;
+        font-size: 1em !important;
+        width: 381px; } }
 
 /*# sourceMappingURL=main.css.map */
