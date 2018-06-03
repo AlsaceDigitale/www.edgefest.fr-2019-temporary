@@ -682,6 +682,9 @@ p.type {
   .nav-list a {
     font: 800 1em "Open sans"; } }
 @media screen and (max-width: 1200px), (max-height: 600px) {
+  .backtotop {
+    display: none !important; }
+
   body {
     background-size: auto 1000px; }
 
