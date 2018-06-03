@@ -54,6 +54,7 @@ $(function() {
 		    	}, 600);
 		    	window.history.pushState(null, null, pageUrl);
 	    	    $(document).attr("title", $('.eventbox').data('title'));
+	    	    ga('send', 'pageview');
 			});
 			$(".social-share").load(pageUrl + ' .social-share', function() {  
 			    $(this).children(':first').unwrap();
@@ -100,6 +101,8 @@ window.onpopstate = function(event) {
 		$(".social-share").load(document.location.pathname + ' .social-share', function() {  
 		    $(this).children(':first').unwrap();
 		});
+
+		ga('send', 'pageview');
 	}
 	else {
   		window.location = document.location;
