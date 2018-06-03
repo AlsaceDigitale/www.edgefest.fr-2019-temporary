@@ -11,7 +11,9 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   -webkit-transition: background-image 0.2s ease-in-out;
-  transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out; }
+
+html, body {
   overflow-x: hidden; }
 
 .mt-20 {
@@ -59,8 +61,11 @@ iframe {
 section a {
   text-decoration: underline; }
 
+.site-wrapper {
+  overflow-x: hidden;
+  position: relative; }
+
 header {
-  overflow: hidden;
   height: 100vh;
   color: white;
   width: 100%;

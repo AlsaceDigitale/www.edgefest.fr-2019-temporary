@@ -26,167 +26,163 @@
   </head>
 
   <body>
-  <div id="streampanimix" class="row" style="background-color: #7aa922; padding: 20px; display: none">
-    <div class="col-xs-12">
-        <h2>ECOUTEZ LE STREAMING PANIMIX #EDGENIGHT</h2>
-        <audio controls><source src="http://192.184.9.158:8888/;stream.mp3" type="audio/mp3"> Your browser does not support the audio element.</audio>
+    <div class="site-wrapper">
+      <header>
+        <div class="container">
+          <a href="/" class="mainlink">
+            <img src="img/2018/edgefest2018.svg" alt="logo edgefest 2018">
+            <!--<h1>Festival des communautés créatives et numériques à Strasbourg</h1>
+            <h2>Du 28 juin au 8 juillet</h2>-->
+            <!--<h1 style="display: block;">EdgeFest</h1>
+            <h2>Du 27 juin au 7 juillet 2017</h2>-->
+          </a>
+        </div>
+        <div class="top-right-info">
+            <div class="line line1">7ème édition du Festival des communautés</div>
+            <div class="clearfix"></div>
+            <div class="line line2">numériques et créatives à Strasbourg</div>
+            <div class="clearfix"></div>
+            <div class="line line3">Du 25.06 au 07.07 2018</div>
+        </div>
+      </header>
+      {% include nav.html %}
+      {{ content }}
+      {% if page.share %}
+      <div class="social-share">
+        <span>Partagez sur : &nbsp;</span>
+        <a href="https://twitter.com/intent/tweet?text={{ page.share | uri_escape | replace: "#", "%23" }}&amp;url={{ site.url }}{{ page.url }}&amp;via=AlsaceDigitale&amp;hashtags={{ tagStr }}" target="_blank" title="Partager sur Twitter"><i class="fa fa-twitter-square"></i></a>
+        <a href="https://www.facebook.com/sharer/sharer.php?t={{ page.share | uri_escape | replace: "#", "%23" }}&amp;u={{ site.url }}{{ page.url }}" target="_blank" title="Partager sur Facebook"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" title="Partager sur Google Plus"><i class="fa fa-google-plus-square"></i></a>
       </div>
+      {% endif %}
+      <section class="sponsors">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="text-center">Organisé par</h2>
+              <ul class="list-inline sponsors" style="margin:0!important;">
+                <li style="margin:0!important;"><a href="http://www.alsacedigitale.org" target="_blank"><img src="img/logos/thumb/alsacedigitale.png"/></a></li>
+                <!--<li><a href="http://www.strasbourg.eu" target="_blank"><img class="smaller" src="img/logos/thumb/strasbourg_eu.png"/></a></li><br><strong>Avec la contribution du</strong><br>-->              
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h2 class="text-center">Avec le soutien de</h2>
+              <ul class="list-inline sponsors" style="margin:0!important;">
+                <li style="margin:0!important;"><a href="http://www.strasbourg.eu" target="_blank"><img class="smaller" src="img/logos/thumb/strasbourg_eu.png"/></a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12">
+              <h2>Partenaires</h2>
+              <ul class="list-inline sponsors">
+                  <!--<li><a href="http://www.devoxx4kids.org/france/" target="_blank"><img src="img/logos/thumb/devoxx4kids.png"/></a></li>-->
+                  <!--<li><a href="http://www.unistra.fr/" target="_blank"><img src="img/logos/thumb/uds.png"/></a></li>-->
+                  <li><a href="http://www.orange.fr/" target="_blank"><img src="img/logos/thumb/orange.png"/></a></li>
+                  <li><a href="http://www.caisse-epargne.fr/" target="_blank"><img src="img/logos/thumb/caissedepargne-carre.jpg"/></a></li>
+                  <!--<li><a href="https://google.com/" target="_blank"><img class="smaller" src="img/logos/thumb/google.png"/></a></li>-->            
+                  <!--<li><a href="https://www.maif.fr/" target="_blank"><img src="img/logos/thumb/maif.png"/></a></li>-->
+                  <li><a href="https://its-future.com/" target="_blank"><img src="img/logos/thumb/itsfuture.png"/></a></li>                
+                  <li><a href="http://www.laplagedigitale.eu" target="_blank"><img class="smaller" src="img/logos/thumb/laplagedigitale.png"/></a></li>
+                  <!--<li><a href="http://av-exciters.com/AV-Lab/" target="_blank"><img src="img/logos/thumb/avlab.png"/></a></li>-->
+                  <!--<li><a href="http://av-exciters.com/" target="_blank"><img class="smaller" src="img/logos/thumb/avexciters.png"/></a></li>-->
+                  <li><a href="http://www.ugc.fr/home.html" target="_blank"><img class="smaller" src="img/logos/thumb/ugc-etoile.png"/></a></li>
+                  <li><a href="http://www.hear.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/hear.png"/></a></li>
+                  <li><a href="http://www.epitech.eu/" target="_blank"><img class="smaller" src="img/logos/thumb/epitech.png"/></a></li>
+                  <li><a href="http://www.ina.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/ina.png"/></a></li>
+                  <!--<li><a href="http://www.mediatheques-cus.fr" target="_blank"><img class="smaller" src="img/logos/thumb/mediatheque.png"/></a></li>-->
+                  <!--<li><a href="https://services-numeriques.unistra.fr/culture-numerique/centre-de-culture-numerique.html" target="_blank"><img class="smaller" src="img/logos/thumb/ccn.png"/></a></li>-->
+                  <!--<li><a href="http://www.i-datech.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/idatech.png"/></a></li>-->
+                  <!--<li><a href="http://www.poly.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/poly.png"/></a></li>-->
+                  <!--<li><a href="http://ouhackpo.eu/" target="_blank"><img class="smaller" src="img/logos/thumb/ouhackpo.png"/></a></li>
+                  <li><a href="http://safirealsace.com/" target="_blank"><img class="smaller" src="img/logos/thumb/safire.png"/></a></li>-->
+                  <!--<li><a href="https://fr-fr.facebook.com/panimix" target="_blank"><img class="smaller" src="img/logos/thumb/Panimix.png"/></a></li>-->
+                  <!--<li><a href="http://www.culture-alsace.org/" target="_blank"><img class="smaller" src="img/logos/thumb/agence-culturelle-dalsace.png"/></a></li>-->
+                  <li><a href="http://lafab.org" target="_blank"><img class="smaller" src="img/logos/thumb/lafabrique.png"/></a></li>
+                  <!--<li><a href="http://www.carola.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/carola.png"/></a></li>-->
+                  <!--<li><a href="http://www.shacom.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/shacom-oresto.png"/></a></li>-->
+                  <!--<li><a href="http://hackstub.netlib.re/" target="_blank"><img class="smaller" src="img/logos/thumb/hackstub.png"/></a></li>
+                  <li><a href="http://pointest.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/point-est.png"/></a></li>-->
+                  <li><a href="http://www.lafrenchtech-alsace.eu/" target="_blank"><img class="smaller" src="img/logos/thumb/fta.png"/></a></li>
+                  <li><a href="http://www.creaccro.eu/" target="_blank"><img class="smaller" src="img/logos/thumb/accro.png"/></a></li>
+                  <li><a href="http://www.semia-incal.com" target="_blank"><img  class="smaller" src="img/logos/thumb/semia.png"/></a></li>
+                  <!--<li><a href="javascript:void(0)"><img class="smaller" src="img/logos/thumb/rivgourmande.png"/></a></li>-->
+                  <li><a href="http://grandestnumerique.org/" target="_blank"><img class="smaller" src="img/logos/thumb/gen.jpg"/></a></li>
+                  <li><a href="https://www.facebook.com/LaManufakture/" target="_blank"><img src="img/logos/thumb/manufakture.jpg"/></a></li>
+                  <li><a href="https://inet.cnfpt.fr/" target="_blank"><img src="img/logos/thumb/inet.png"/></a></li>
+                  <li><a href="https://www.facebook.com/apero.entrepreneurs.strasbourg/" target="_blank"><img src="img/logos/thumb/apero.png"/></a></li>
+                  <li><a href="http://www.flams.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/flams.png"/></a></li>
+                  <!--<li><a href="https://exia.cesi.fr/ecole-informatique-strasbourg/" target="_blank"><img class="smaller" src="img/logos/thumb/exia.jpg"/></a></li>-->
+                  <!--<li><a href="https://invitethemedia.com/" target="_blank"><img class="smaller" src="img/logos/thumb/invitethemedia.png"/></a></li>
+                  <li><a href="http://rivetoile.com/" target="_blank"><img class="smaller" src="img/logos/thumb/rivetoile.jpg"/></a></li>-->
+                  <!--<li><a href="http://www.ladroneshop.com/" target="_blank"><img class="smaller" src="img/logos/thumb/ladroneshop.png"/></a></li>-->
+                  <li><a href="http://shadok.strasbourg.eu" target="_blank"><img class="smaller" src="img/logos/thumb/shadok.png"/></a></li>
+              </ul>
+              <!--<h2>Partenaires média</h2>-->
+                <!--               <li><a href="http://services-numeriques.unistra.fr/culture-numerique/centre-de-culture-numerique.html" target="_blank"><img src="img/ccn.png"/></a></li>
+                <li><a href="http://www.unistra.fr" target="_blank"><img src="img/uds.png"/></a></li>
+                <li><a href="http://av-exciters.com/" target="_blank"><img src="img/avexciters.png"/></a></li>
+                -->
+   
+              <ul class="list-inline sponsors">
+                <!--<li><a href="http://www.radioenconstruction.com" target="_blank"><img class="smaller" src="img/logos/thumb/radioenconstruction.png"/></a></li>-->
+                <!--<li><a href="http://www.rue89strasbourg.com" target="_blank"><img src="img/logos/thumb/rue89strasbourg.png"/></a></li>-->
+                <!--<li><a href="http://www.fipradio.fr/" target="_blank"><img src="img/logos/thumb/fip.png"/></a></li>-->
+                <!--<li><a href="https://www.maddyness.com/" target="_blank"><img class="smaller" src="img/logos/thumb/maddyness.jpg"/></a></li>
+                <li><a href="http://www.tchapp.alsace/" target="_blank"><img src="img/logos/thumb/tchapp.jpg"/></a></li>
+                <li><a href="http://frenchweb.fr/" target="_blank" title="FrenchWeb.fr, le magazine des professionnels du digital regroupe une communauté de plus de 35 000 professionnels, entrepreneurs, experts. Retrouvez des contenus spécifiques : news, dossiers, études, interviews, reportages vidéo, podcasts…"><img src="img/logos/thumb/frenchweb.png"/></a></li>-->
+                <!--<li><a href="http://entrepreneurs.alsace/" target="_blank"><img src="img/logos/thumb/entrepreneursalsace.png"/></a></li>-->
+                <!--<li><a href="http://www.wedemain.fr/" target="_blank"><img src="img/logos/thumb/WeDemain.png"/></a></li>-->
+                <!-- <li><img src="img/cus_ete_2013_marqueur_small.png"/></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="list-inline row">
+                <li>
+                  <ul class="list-unstyled">
+                    <li class="title">Presse</li>
+                    <li><a href="https://drive.google.com/file/d/0B0S2y3rk51DNWk5TeG9adHFoczg/view?usp=sharing" target="_blank">Communiqué de presse</a></li>
+                    <!--<li><a href="https://drive.google.com/file/d/0B0S2y3rk51DNd2xZZ1NxdnZSaW9BRmRJNjRsSE9RcG1mOWhv/view?usp=sharing" target="_blank">Communiqué de presse</a></li>-->
+                    <li><a href="https://issuu.com/alsacedigitale/docs/plaquetteprogrammeweb" target="_blank">Programme 2017</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="list-unstyled">
+                    <li class="title">Éditions précédentes</li>
+                    <li><a href="http://2016.edgefest.fr" target="_blank">Édition 2016</a></li>
+                    <li><a href="http://2015.edgefest.fr" target="_blank">Édition 2015</a></li>
+                    <li><a href="http://2014.edgefest.fr" target="_blank">Édition 2014</a></li>
+                    <li><a href="http://2013.edgefest.fr" target="_blank">Édition 2013</a></li>
+                    <li><a href="http://2012.edgefest.fr" target="_blank">Édition 2012</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="list-unstyled">
+                    <li class="title">Contact</li>
+                    <!--<li><a href="/equipe.html">Équipe</a></li>-->
+                    <li><a href="https://www.facebook.com/EdgeFestStrasbourg">Facebook</a></li>
+                    <li><a href="https://twitter.com/AlsaceDigitale">Twitter</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <span class="hashtag">#EdgeFest</span>
+            </div>          
+            <div class="col-xs-12">
+              <span class="copyright">© 2017 <a href="http://alsacedigitale.org/" target="_blank"><strong>Alsace Digitale</strong></a></span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <header>
-      <div class="container">
-        <a href="/" class="mainlink">
-          <img src="img/2018/edgefest2018.svg" alt="logo edgefest 2018">
-          <!--<h1>Festival des communautés créatives et numériques à Strasbourg</h1>
-          <h2>Du 28 juin au 8 juillet</h2>-->
-          <!--<h1 style="display: block;">EdgeFest</h1>
-          <h2>Du 27 juin au 7 juillet 2017</h2>-->
-        </a>
-      </div>
-      <div class="top-right-info">
-          <div class="line line1">7ème édition du Festival des communautés</div>
-          <div class="clearfix"></div>
-          <div class="line line2">numériques et créatives à Strasbourg</div>
-          <div class="clearfix"></div>
-          <div class="line line3">Du 25.06 au 07.07 2018</div>
-      </div>
-    </header>
-    {% include nav.html %}
-    {{ content }}
-    {% if page.share %}
-    <div class="social-share">
-      <span>Partagez sur : &nbsp;</span>
-      <a href="https://twitter.com/intent/tweet?text={{ page.share | uri_escape | replace: "#", "%23" }}&amp;url={{ site.url }}{{ page.url }}&amp;via=AlsaceDigitale&amp;hashtags={{ tagStr }}" target="_blank" title="Partager sur Twitter"><i class="fa fa-twitter-square"></i></a>
-      <a href="https://www.facebook.com/sharer/sharer.php?t={{ page.share | uri_escape | replace: "#", "%23" }}&amp;u={{ site.url }}{{ page.url }}" target="_blank" title="Partager sur Facebook"><i class="fa fa-facebook-square"></i></a>
-      <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" title="Partager sur Google Plus"><i class="fa fa-google-plus-square"></i></a>
-    </div>
-    {% endif %}
-    <section class="sponsors">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="text-center">Organisé par</h2>
-            <ul class="list-inline sponsors" style="margin:0!important;">
-              <li style="margin:0!important;"><a href="http://www.alsacedigitale.org" target="_blank"><img src="img/logos/thumb/alsacedigitale.png"/></a></li>
-              <!--<li><a href="http://www.strasbourg.eu" target="_blank"><img class="smaller" src="img/logos/thumb/strasbourg_eu.png"/></a></li><br><strong>Avec la contribution du</strong><br>-->              
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h2 class="text-center">Avec le soutien de</h2>
-            <ul class="list-inline sponsors" style="margin:0!important;">
-              <li style="margin:0!important;"><a href="http://www.strasbourg.eu" target="_blank"><img class="smaller" src="img/logos/thumb/strasbourg_eu.png"/></a></li>
-            </ul>
-          </div>
-          <div class="col-xs-12">
-            <h2>Partenaires</h2>
-            <ul class="list-inline sponsors">
-                <!--<li><a href="http://www.devoxx4kids.org/france/" target="_blank"><img src="img/logos/thumb/devoxx4kids.png"/></a></li>-->
-                <!--<li><a href="http://www.unistra.fr/" target="_blank"><img src="img/logos/thumb/uds.png"/></a></li>-->
-                <li><a href="http://www.orange.fr/" target="_blank"><img src="img/logos/thumb/orange.png"/></a></li>
-                <li><a href="http://www.caisse-epargne.fr/" target="_blank"><img src="img/logos/thumb/caissedepargne-carre.jpg"/></a></li>
-                <!--<li><a href="https://google.com/" target="_blank"><img class="smaller" src="img/logos/thumb/google.png"/></a></li>-->            
-                <!--<li><a href="https://www.maif.fr/" target="_blank"><img src="img/logos/thumb/maif.png"/></a></li>-->
-                <li><a href="https://its-future.com/" target="_blank"><img src="img/logos/thumb/itsfuture.png"/></a></li>                
-                <li><a href="http://www.laplagedigitale.eu" target="_blank"><img class="smaller" src="img/logos/thumb/laplagedigitale.png"/></a></li>
-                <!--<li><a href="http://av-exciters.com/AV-Lab/" target="_blank"><img src="img/logos/thumb/avlab.png"/></a></li>-->
-                <!--<li><a href="http://av-exciters.com/" target="_blank"><img class="smaller" src="img/logos/thumb/avexciters.png"/></a></li>-->
-                <li><a href="http://www.ugc.fr/home.html" target="_blank"><img class="smaller" src="img/logos/thumb/ugc-etoile.png"/></a></li>
-                <li><a href="http://www.hear.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/hear.png"/></a></li>
-                <li><a href="http://www.epitech.eu/" target="_blank"><img class="smaller" src="img/logos/thumb/epitech.png"/></a></li>
-                <li><a href="http://www.ina.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/ina.png"/></a></li>
-                <!--<li><a href="http://www.mediatheques-cus.fr" target="_blank"><img class="smaller" src="img/logos/thumb/mediatheque.png"/></a></li>-->
-                <!--<li><a href="https://services-numeriques.unistra.fr/culture-numerique/centre-de-culture-numerique.html" target="_blank"><img class="smaller" src="img/logos/thumb/ccn.png"/></a></li>-->
-                <!--<li><a href="http://www.i-datech.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/idatech.png"/></a></li>-->
-                <!--<li><a href="http://www.poly.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/poly.png"/></a></li>-->
-                <!--<li><a href="http://ouhackpo.eu/" target="_blank"><img class="smaller" src="img/logos/thumb/ouhackpo.png"/></a></li>
-                <li><a href="http://safirealsace.com/" target="_blank"><img class="smaller" src="img/logos/thumb/safire.png"/></a></li>-->
-                <!--<li><a href="https://fr-fr.facebook.com/panimix" target="_blank"><img class="smaller" src="img/logos/thumb/Panimix.png"/></a></li>-->
-                <!--<li><a href="http://www.culture-alsace.org/" target="_blank"><img class="smaller" src="img/logos/thumb/agence-culturelle-dalsace.png"/></a></li>-->
-                <li><a href="http://lafab.org" target="_blank"><img class="smaller" src="img/logos/thumb/lafabrique.png"/></a></li>
-                <!--<li><a href="http://www.carola.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/carola.png"/></a></li>-->
-                <!--<li><a href="http://www.shacom.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/shacom-oresto.png"/></a></li>-->
-                <!--<li><a href="http://hackstub.netlib.re/" target="_blank"><img class="smaller" src="img/logos/thumb/hackstub.png"/></a></li>
-                <li><a href="http://pointest.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/point-est.png"/></a></li>-->
-                <li><a href="http://www.lafrenchtech-alsace.eu/" target="_blank"><img class="smaller" src="img/logos/thumb/fta.png"/></a></li>
-                <li><a href="http://www.creaccro.eu/" target="_blank"><img class="smaller" src="img/logos/thumb/accro.png"/></a></li>
-                <li><a href="http://www.semia-incal.com" target="_blank"><img  class="smaller" src="img/logos/thumb/semia.png"/></a></li>
-                <!--<li><a href="javascript:void(0)"><img class="smaller" src="img/logos/thumb/rivgourmande.png"/></a></li>-->
-                <li><a href="http://grandestnumerique.org/" target="_blank"><img class="smaller" src="img/logos/thumb/gen.jpg"/></a></li>
-                <li><a href="https://www.facebook.com/LaManufakture/" target="_blank"><img src="img/logos/thumb/manufakture.jpg"/></a></li>
-                <li><a href="https://inet.cnfpt.fr/" target="_blank"><img src="img/logos/thumb/inet.png"/></a></li>
-                <li><a href="https://www.facebook.com/apero.entrepreneurs.strasbourg/" target="_blank"><img src="img/logos/thumb/apero.png"/></a></li>
-                <li><a href="http://www.flams.fr/" target="_blank"><img class="smaller" src="img/logos/thumb/flams.png"/></a></li>
-                <!--<li><a href="https://exia.cesi.fr/ecole-informatique-strasbourg/" target="_blank"><img class="smaller" src="img/logos/thumb/exia.jpg"/></a></li>-->
-                <!--<li><a href="https://invitethemedia.com/" target="_blank"><img class="smaller" src="img/logos/thumb/invitethemedia.png"/></a></li>
-                <li><a href="http://rivetoile.com/" target="_blank"><img class="smaller" src="img/logos/thumb/rivetoile.jpg"/></a></li>-->
-                <!--<li><a href="http://www.ladroneshop.com/" target="_blank"><img class="smaller" src="img/logos/thumb/ladroneshop.png"/></a></li>-->
-                <li><a href="http://shadok.strasbourg.eu" target="_blank"><img class="smaller" src="img/logos/thumb/shadok.png"/></a></li>
-            </ul>
-            <!--<h2>Partenaires média</h2>-->
-              <!--               <li><a href="http://services-numeriques.unistra.fr/culture-numerique/centre-de-culture-numerique.html" target="_blank"><img src="img/ccn.png"/></a></li>
-              <li><a href="http://www.unistra.fr" target="_blank"><img src="img/uds.png"/></a></li>
-              <li><a href="http://av-exciters.com/" target="_blank"><img src="img/avexciters.png"/></a></li>
-              -->
- 
-            <ul class="list-inline sponsors">
-              <!--<li><a href="http://www.radioenconstruction.com" target="_blank"><img class="smaller" src="img/logos/thumb/radioenconstruction.png"/></a></li>-->
-              <!--<li><a href="http://www.rue89strasbourg.com" target="_blank"><img src="img/logos/thumb/rue89strasbourg.png"/></a></li>-->
-              <!--<li><a href="http://www.fipradio.fr/" target="_blank"><img src="img/logos/thumb/fip.png"/></a></li>-->
-              <!--<li><a href="https://www.maddyness.com/" target="_blank"><img class="smaller" src="img/logos/thumb/maddyness.jpg"/></a></li>
-              <li><a href="http://www.tchapp.alsace/" target="_blank"><img src="img/logos/thumb/tchapp.jpg"/></a></li>
-              <li><a href="http://frenchweb.fr/" target="_blank" title="FrenchWeb.fr, le magazine des professionnels du digital regroupe une communauté de plus de 35 000 professionnels, entrepreneurs, experts. Retrouvez des contenus spécifiques : news, dossiers, études, interviews, reportages vidéo, podcasts…"><img src="img/logos/thumb/frenchweb.png"/></a></li>-->
-              <!--<li><a href="http://entrepreneurs.alsace/" target="_blank"><img src="img/logos/thumb/entrepreneursalsace.png"/></a></li>-->
-              <!--<li><a href="http://www.wedemain.fr/" target="_blank"><img src="img/logos/thumb/WeDemain.png"/></a></li>-->
-              <!-- <li><img src="img/cus_ete_2013_marqueur_small.png"/></li> -->
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <ul class="list-inline row">
-              <li>
-                <ul class="list-unstyled">
-                  <li class="title">Presse</li>
-                  <li><a href="https://drive.google.com/file/d/0B0S2y3rk51DNWk5TeG9adHFoczg/view?usp=sharing" target="_blank">Communiqué de presse</a></li>
-                  <!--<li><a href="https://drive.google.com/file/d/0B0S2y3rk51DNd2xZZ1NxdnZSaW9BRmRJNjRsSE9RcG1mOWhv/view?usp=sharing" target="_blank">Communiqué de presse</a></li>-->
-                  <li><a href="https://issuu.com/alsacedigitale/docs/plaquetteprogrammeweb" target="_blank">Programme 2017</a></li>
-                </ul>
-              </li>
-              <li>
-                <ul class="list-unstyled">
-                  <li class="title">Éditions précédentes</li>
-                  <li><a href="http://2016.edgefest.fr" target="_blank">Édition 2016</a></li>
-                  <li><a href="http://2015.edgefest.fr" target="_blank">Édition 2015</a></li>
-                  <li><a href="http://2014.edgefest.fr" target="_blank">Édition 2014</a></li>
-                  <li><a href="http://2013.edgefest.fr" target="_blank">Édition 2013</a></li>
-                  <li><a href="http://2012.edgefest.fr" target="_blank">Édition 2012</a></li>
-                </ul>
-              </li>
-              <li>
-                <ul class="list-unstyled">
-                  <li class="title">Contact</li>
-                  <!--<li><a href="/equipe.html">Équipe</a></li>-->
-                  <li><a href="https://www.facebook.com/EdgeFestStrasbourg">Facebook</a></li>
-                  <li><a href="https://twitter.com/AlsaceDigitale">Twitter</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <span class="hashtag">#EdgeFest</span>
-          </div>          
-          <div class="col-xs-12">
-            <span class="copyright">© 2017 <a href="http://alsacedigitale.org/" target="_blank"><strong>Alsace Digitale</strong></a></span>
-          </div>
-        </div>
-      </div>
-    </footer>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="/js/script.js"></script>
